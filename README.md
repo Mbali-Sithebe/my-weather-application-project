@@ -1,1 +1,1 @@
-Working progress application 
+This project has no responsive design 
