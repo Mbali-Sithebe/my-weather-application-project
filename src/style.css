@@ -1,11 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    178.6deg,
-    rgb(20, 36, 50) 11.8%,
-    rgb(124, 143, 161) 83.8%
-  );
+  background: radial-gradient(circle at top left, #084a88 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #046383 0%, transparent 50%),
+    linear-gradient(135deg, #060821, #0a0b38, #09092f);
+  background-blend-mode: screen, overlay, normal;
 }
 
 #weatherContainer {
@@ -25,7 +24,7 @@ header {
 }
 
 a {
-  color: #dac4fc;
+  color: #1d85e7;
 }
 
 .search-input {
@@ -45,19 +44,19 @@ a {
 }
 
 .submit-btn {
-  background: #dac4fc;
+  background: #1d85e7;
   padding: 18px 30px;
   margin-left: 5px;
   border: none;
   border-radius: 6px;
-  color: #0b111d;
+  color: #f8f7fc;
   font-size: 15px;
   cursor: pointer;
 }
 
 .week-forecast {
   background: #202c3c;
-  height: 240px;
+  height: 220px;
   border-radius: 16px;
 }
 
@@ -84,7 +83,7 @@ a {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #dac4fc;
+  color: #1d85e7;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -148,7 +147,7 @@ main {
 }
 
 .air-conditions strong {
-  color: #dac4fc;
+  color: #1d85e7;
 }
 
 .air-grid {
