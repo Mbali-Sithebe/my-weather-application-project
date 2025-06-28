@@ -22,23 +22,34 @@
       <header>
         <section class="form-container">
           <form>
-            <input type="search" placeholder="Search for cities" />
-            <input type="submit" value="Search" />
+            <input
+              type="search"
+              placeholder="Search for cities"
+              required
+              class="search-input"
+            />
+            <input type="submit" value="Search" class="submit-btn" />
           </form>
         </section>
       </header>
 
       <!-- Main Section -->
       <main>
-        <!-- Displaying Main City -->
-        <section class="display-city">
-          <h1>Johannesburg</h1>
-          <p>Friday 12:40, Clear</p>
-        </section>
+        <section id="weatherData">
+          <!-- Displaying Main City -->
+          <section class="display-city">
+            <h1 class="city-name">Johannesburg</h1>
+            <p class="city-info">Friday 12:40, Clear</p>
+          </section>
 
-        <!-- Displaying Temperature -->
-        <section class="temperature">
-          <span>🌙 2°C</span>
+          <!-- Displaying Temperature -->
+          <section class="temperature">
+            <span class="temp-data">
+              <span class="weather-icon">🌙</span>
+              <span class="weather-temp">2</span>
+              <span class="weather-units">°C</span>
+            </span>
+          </section>
         </section>
 
         <!-- 7 Day Forecast -->
@@ -49,8 +60,8 @@
         <!-- Displaying Air Conditions -->
         <section class="air-conditions">
           <h2>AIR CONDITIONS</h2>
-          <p>Humidity: 66%</p>
-          <p>Wind: 3.13km/h</p>
+          <p>Humidity: <strong>66%</strong></p>
+          <p>Wind: <strong>3.13km/h</strong></p>
         </section>
       </main>
 
