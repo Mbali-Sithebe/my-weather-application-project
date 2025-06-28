@@ -46,14 +46,19 @@ a {
   border-radius: 6px;
   color: #0b111d;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .week-forecast {
   background: #202c3c;
+  height: 150px;
+  border-radius: 16px;
 }
 
 .air-conditions {
   background: #202c3c;
+  height: 110px;
+  border-radius: 16px;
 }
 
 main {
@@ -78,9 +83,19 @@ main {
   color: #dddcdfd0;
 }
 
-h2 {
+.forecastHeading {
   font-size: 15px;
   color: #f8f7fc;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.airHeading {
+  font-size: 15px;
+  color: #f8f7fc;
+  margin-left: 20px;
+  padding-top: 20px;
+  
 }
 
 .air-conditions p {
@@ -88,10 +103,19 @@ h2 {
   line-height: 20px;
   font-size: 15px;
   font-weight: 500;
+  margin-left: 20px;
+  
 }
 
 .air-conditions strong {
   color: #dddcdfd0;
+}
+
+.air-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+ 
 }
 
 .temperature {
