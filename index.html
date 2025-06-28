@@ -20,12 +20,13 @@
     <section id="weatherContainer">
       <!-- Header Section -->
       <header>
-        <section class="form-container">
+        <section class="form-container" id="search-form">
           <form>
             <input
               type="search"
               placeholder="Search for cities"
               required
+              id="search-input"
               class="search-input"
             />
             <input type="submit" value="Search" class="submit-btn" />
@@ -38,7 +39,7 @@
         <section id="weatherData">
           <!-- Displaying Main City -->
           <section class="display-city">
-            <h1 class="city-name">Johannesburg</h1>
+            <h1 class="city-name" id="city">Johannesburg</h1>
             <p class="city-info">Friday 12:40, Clear</p>
           </section>
 
@@ -80,5 +81,7 @@
         <a href="https://my-weather-application02.netlify.app/">Netlify</a>
       </footer>
     </section>
+
+    <script src="./src/app.js"></script>
   </body>
 </html>
