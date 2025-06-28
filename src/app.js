@@ -64,5 +64,29 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 //Default City
 searchCity("Johannesburg");
+displayForecast();
 
-//API Intergration
+//Weather Forecast
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+                  <div class="weather-forecast-date">${day}</div>
+                  <div class="weather-forecast-icon">🌤️</div>
+                  <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temp">
+                      <strong>15°C </strong>
+                    </div>
+                    <div class="weather-forecast-temp">9°C</div>
+                  </div>
+                </div>`;
+  });
+
+  forecast.innerHTML = forecastHtml;
+}

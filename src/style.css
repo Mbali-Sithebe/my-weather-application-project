@@ -57,8 +57,40 @@ a {
 
 .week-forecast {
   background: #202c3c;
-  height: 150px;
+  height: 240px;
   border-radius: 16px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: #dddcdfd0;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #dac4fc;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.weather-forecast-temp {
+  padding: 0 10px;
 }
 
 .air-conditions {
